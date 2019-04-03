@@ -1,6 +1,6 @@
 clear;
 addpath('vidosat_tool');
-addpath('Common');
+%addpath('Common');
 %%% loading demo data %%%
 load('demo_data/gsalesman_sig10.mat');  
 data.noisy = noisy;
@@ -23,10 +23,10 @@ param.strideTemporal = 1;
 %%%%%%%% visualization of the generated data %%%%%%%%
 % decomment the corresponding visualizations that you want
 
-% %%% play the noisy video frames %%%
-% figure; implay(uint8(data.noisy), []);
-% %%% play the denoised video frames %%%
-% figure; implay(uint8(Xr), []);
+% %% play the noisy video frames %%%
+% figure; implay(uint8(data.noisy));
+% %% play the denoised video frames %%%
+% figure; implay(uint8(Xr));
 
 % %%% plot frame-by-frame PSNR %%%
 % figure; 
